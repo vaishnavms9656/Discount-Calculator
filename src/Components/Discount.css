@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+  .form-section h1 {
+    margin-left: 20px;
+    font-family: system-ui, sans-serif;
+    font-size: calc( 1em + 30vmin );
+    font-weight: 900;
+    font-size: 50px;
+    color: tomato;
+
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: lightblue;
+
+    text-shadow:
+
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      var(--background-color),
+
+      calc( var(--x-offset) - var(--stroke) )
+      calc( var(--y-offset) + var(--stroke) )
+      0px
+      var(--stroke-color);
+
+  }
+
+  @supports ( text-shadow: 1px 1px 1px 1px black ) {
+    h1 {
+      text-shadow:
+
+        var(--x-offset)
+        var(--y-offset)
+        0px
+        0px
+        var(--background-color),
+
+        var(--x-offset)
+        var(--y-offset)
+        var(--stroke)
+        0px
+        var(--stroke-color);
+
+    }
+  }
+  .output{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 110px;
+    font-size: 25px;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: azure;
+  }
+  .saving{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 25px;
+    background-color: tomato;
+    border-radius: 30px;
+    width: 200px;
+  }
+  .pay{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 25px;
+    background-color: rgb(31, 184, 198);
+    border-radius: 30px;
+    width: 200px;
+  }
